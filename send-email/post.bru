@@ -1,0 +1,17 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/api/send-mail
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "text": "hello"
+  }
+}
